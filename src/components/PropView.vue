@@ -6,7 +6,7 @@
           Ingresa
         </v-btn>
       </v-row>
-      <page-content msg="Para ti, todo de nosotros" style="background: beige" />
+      <page-content style="background: beige" />
     </v-container>
 
     <v-navigation-drawer v-model="drawer" absolute temporary>
