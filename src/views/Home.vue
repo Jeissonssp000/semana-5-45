@@ -23,7 +23,6 @@
 
     <!-- <page-content msg="Para ti, todo de nosotros" style="background: beige" /> -->
     <prop-view/>
-    <card-expand></card-expand>
     <footer-view></footer-view>
   </v-app>
 </template>
@@ -31,14 +30,12 @@
 <script>
 // @ is an alias to /src
 import FooterView from "../components/FooterView.vue";
-import CardExpand from "../components/CardExpand.vue";
 import PropView from '../components/PropView.vue';
 
 export default {
   name: "Home",
   components: {
     FooterView,
-    CardExpand,
     PropView,
   },
 };

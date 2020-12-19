@@ -75,6 +75,18 @@
           />
         </div>
       </div>
+      <h1 style="margin-top: 40px;">Nuestros productos, pensados para tí</h1>
+      <div class="row">
+        <card-expand/>
+        <card-expand/>
+        <card-expand/>
+        <card-expand/>
+        <card-expand/>
+        <card-expand/>
+        <card-expand/>
+        <card-expand/>
+        <card-expand/>
+      </div>
     </div>
   </div>
 </template>
@@ -82,6 +94,7 @@
 <script>
 // @ is an alias to /src
 import CardView from "@/components/CardView.vue";
+import CardExpand from './CardExpand.vue';
 
 export default {
   name: "PageContent",
@@ -90,6 +103,7 @@ export default {
   },
   components: {
     CardView,
+    CardExpand,
   },
 };
 </script>
@@ -111,5 +125,10 @@ export default {
   object-fit: cover;
   width: 100%;
   /* height: 100%; */
+}
+
+h1 {
+  font-family: "Langar", cursive;
+  padding-left: 45px;
 }
 </style>

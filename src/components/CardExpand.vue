@@ -2,6 +2,7 @@
   <v-card
     class="mx-auto"
     max-width="344"
+    style="margin-bottom: 20px;"
   >
     <v-card-text>
       <div>Word of the Day</div>
