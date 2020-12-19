@@ -1,28 +1,45 @@
 <template>
-  <div class="home">
-    <section>
+  <v-app id="inspire" class="home">
+    <v-app-bar app color="#77a0e0" flat>
+      <v-avatar
+        :color="$vuetify.breakpoint.smAndDown ? 'grey darken-1' : 'transparent'"
+        size="36"
+      ></v-avatar>
+
+      <v-avatar
+        class="hidden-sm-and-down"
+        color="grey darken-1 shrink"
+        size="80"
+        ><img
+          class="avatar-principal"
+          src="https://dam.ngenespanol.com/wp-content/uploads/2019/10/perros-personalidad-2.jpg"
+          alt="Avatar"
+      /></v-avatar>
       <h1 class="texto">Bienvenido a nuestra plataforma virtual</h1>
-    </section>
-    <login-form />
-    <img
-      src="https://www.sojodesign.es/gifs/animaciones/gif-4.gif"
-      alt="Megafono, megapromociones"
-      srcset=""
-    />
-    <page-content msg="Para ti, todo de nosotros" style="background: beige" />
-  </div>
+      <v-btn depressed color="primary">
+        Primary
+      </v-btn>
+    </v-app-bar>
+
+    <!-- <page-content msg="Para ti, todo de nosotros" style="background: beige" /> -->
+    <prop-view/>
+    <card-expand></card-expand>
+    <footer-view></footer-view>
+  </v-app>
 </template>
 
 <script>
 // @ is an alias to /src
-import PageContent from "@/components/PageContent.vue";
-import LoginForm from "@/components/LoginForm.vue";
+import FooterView from "../components/FooterView.vue";
+import CardExpand from "../components/CardExpand.vue";
+import PropView from '../components/PropView.vue';
 
 export default {
   name: "Home",
   components: {
-    PageContent,
-    LoginForm,
+    FooterView,
+    CardExpand,
+    PropView,
   },
 };
 </script>
@@ -30,7 +47,10 @@ export default {
 <style scoped>
 h1 {
   font-family: "Langar", cursive;
-  background: beige;
-  padding: 45px;
+  padding-left: 45px;
+}
+.avatar-principal {
+  object-fit: cover;
+  width: 100%;
 }
 </style>
