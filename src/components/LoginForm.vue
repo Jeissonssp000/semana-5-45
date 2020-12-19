@@ -2,7 +2,10 @@
   <div class="login-form">
     <form>
       <div class="container">
-        <div class="mx-auto mt-5" style="width: 300px; border-radius: 10px">
+        <hr>
+        <h3>¿Deseas ingresar?</h3>
+        <div class="mx-auto mt-5" style="width: auto; border-radius: 10px">
+            <hr>
           <div class="form-group">
             <label for="exampleInputEmail1">Dirección de correo</label>
             <input
@@ -22,13 +25,15 @@
               v-model="login.password"
             />
           </div>
+          <hr>
           <button
+            class="btn btn-outline-info my-2 my-sm-0"
             type="submit"
-            class="btn btn-primary mt-2 mb-5"
             @click.prevent="loginUser"
           >
-            Submit
+            Ingresar
           </button>
+          <hr>
         </div>
         <!-- con @click.prevent="loginUser" llamo al metodo dentro del script -->
         <!-- con este pre, estoy mostrando en vivo y en direcito lo que va escribiendo el usuario dentro de los inputs -->
@@ -68,7 +73,7 @@ export default {
         let response2 = await this.$http.get("/api/auth");
         let user = response2.data[0];
 
-        console.log(response2, user)
+        console.log(response2, user);
 
         localStorage.setItem("jwt", token);
         localStorage.setItem("user", JSON.stringify(user));
@@ -77,7 +82,7 @@ export default {
           this.$router.push("/services");
           swal(
             "Yep!",
-            `Bienvenido de regreso! disfruta ${ user.name }`,
+            `Bienvenido de regreso! disfruta tu estancia ${user.name}`,
             "success"
           );
         }
@@ -90,4 +95,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style scoped>
+h3 {
+  font-family: "Langar", cursive;
+}
+</style>

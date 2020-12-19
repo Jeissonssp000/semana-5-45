@@ -1,6 +1,6 @@
 <template>
   <v-app id="inspire" class="home">
-    <v-app-bar app color="#77a0e0" flat>
+    <v-app-bar app color="#2661bd" flat>
       <v-avatar
         :color="$vuetify.breakpoint.smAndDown ? 'grey darken-1' : 'transparent'"
         size="36"
@@ -12,11 +12,11 @@
         size="80"
         ><img
           class="avatar-principal"
-          src="https://dam.ngenespanol.com/wp-content/uploads/2019/10/perros-personalidad-2.jpg"
+          src="https://i2.wp.com/capitaliafamiliar.es/wp-content/uploads/2018/06/megafono.png?ssl=1"
           alt="Avatar"
       /></v-avatar>
-      <h1 class="texto">Bienvenido a nuestra plataforma virtual</h1>
-      <v-btn depressed color="primary">
+      <v-btn depressed color="primary" >
+      <h1 class="texto">Box-Com</h1>
         Primary
       </v-btn>
     </v-app-bar>
@@ -45,6 +45,7 @@ export default {
 h1 {
   font-family: "Langar", cursive;
   padding-left: 45px;
+  color: aliceblue;
 }
 .avatar-principal {
   object-fit: cover;
