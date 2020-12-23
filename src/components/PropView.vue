@@ -2,15 +2,15 @@
   <v-sheet
     height="auto"
     class="overflow-hidden"
-    style="position: relative; margin-top: 64px;"
+    style="position: relative"
   >
-    <v-container class="fill-height">
+    <v-container class="fill-height pt-0">
       <v-row align="center" justify="center">
         <v-btn color="pink" dark @click.stop="drawer = !drawer">
           Ingresa en nuestra plataforma
         </v-btn>
       </v-row>
-      <page-content style="background: beige" />
+      <page-content />
     </v-container>
 
     <v-navigation-drawer v-model="drawer" absolute temporary>
