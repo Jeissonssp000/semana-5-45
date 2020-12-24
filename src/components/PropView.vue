@@ -4,16 +4,15 @@
     class="overflow-hidden"
     style="position: relative"
   >
-    <carusel-view/>
-    <v-container>
+    <v-container class="mt-14" >
       <v-row align="center" justify="center">
         <v-btn color="pink" dark @click.stop="drawer = !drawer">
           Ingresa en nuestra plataforma
         </v-btn>
       </v-row>
+      <carusel-view/>
       <page-content />
     </v-container>
-
 
     <v-navigation-drawer v-model="drawer" absolute temporary>
       <login-form />
