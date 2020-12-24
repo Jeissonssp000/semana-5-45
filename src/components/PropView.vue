@@ -4,13 +4,14 @@
     class="overflow-hidden"
     style="position: relative"
   >
-    <v-container class="mt-14gi" >
+    <v-container class="mt-14" >
       <v-row align="center" justify="center">
-        <v-btn color="pink" dark @click.stop="drawer = !drawer">
+        <v-btn color="pink" class="mb-2" dark @click.stop="drawer = !drawer">
           Ingresa en nuestra plataforma
         </v-btn>
       </v-row>
-      <carusel-view/>
+      <carrusel-view/>
+      <hr />
       <page-content />
     </v-container>
 
@@ -21,11 +22,12 @@
 </template>
 
 <script>
+import CarruselView from './CarruselView.vue';
 import CaruselView from './CaruselView.vue';
 import LoginForm from "./LoginForm.vue";
 import PageContent from "./PageContent.vue";
 export default {
-  components: { LoginForm, PageContent, CaruselView},
+  components: { LoginForm, PageContent, CaruselView, CarruselView},
   name: "PropView",
   data() {
     return {

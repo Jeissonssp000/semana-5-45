@@ -2,51 +2,19 @@
   <div class="container">
     <div>
       <v-parallax
-        class="h-auto"
+        height="600"
         dark
-        src="https://previews.123rf.com/images/ponomarenko13/ponomarenko131603/ponomarenko13160300014/53645868-resumen-l%C3%ADneas-azules-sobre-un-fondo-claro-.jpg"
+        src="https://image.freepik.com/vector-gratis/gente-diminuta-comercializador-megafono-analisis-datos-consumidores-marketing-basado-datos-analisis-comportamiento-consumidor-concepto-tendencia-marketing-digital_335657-2423.jpg"
       >
-        <v-row align="center" justify="center">
-          <v-col class="text-center" cols="12">
-            <v-container>
-              <v-row>
-                <v-col cols="13" sm="2">
-                  <v-sheet rounded="lg" min-height="268">
-                    <!--  -->
-                    <img
-                      class="imagen-three"
-                      src="https://i.pinimg.com/474x/ab/26/67/ab26674c342e4e05d488ae20e24065c1.jpg"
-                      alt="Avatar"
-                    />
-                  </v-sheet>
-                </v-col>
-
-                <v-col cols="12" sm="8">
-                  <v-sheet min-height="70vh" rounded="lg">
-                    <!--  -->
-                    <img
-                      class="imagen-three-center"
-                      src="https://www.sojodesign.es/gifs/animaciones/gif-4.gif"
-                      alt="Megafono, megapromociones"
-                      srcset=""
-                    />
-                  </v-sheet>
-                </v-col>
-
-                <v-col cols="12" sm="2">
-                  <v-sheet rounded="lg" min-height="268">
-                    <!--  -->
-                    <img
-                      class="imagen-three"
-                      src="https://i.pinimg.com/474x/ab/26/67/ab26674c342e4e05d488ae20e24065c1.jpg"
-                      alt="Avatar"
-                    />
-                  </v-sheet>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-col>
-        </v-row>
+      <v-sheet 
+        class="py-5 mx-16 white--text text-center"
+        rounded="lg"
+        color="rgb(186, 104, 200, 0.5)"
+      >
+      <h1 class="font-weight-black mx-5">
+        40% más ventas de nuestros clientes demuestran la calidad de nuestros servicios. <br><br> Descubre cómo lo hacemos.
+      </h1>
+      </v-sheet>
       </v-parallax>
     </div>
     <hr />
@@ -56,15 +24,21 @@
       srcset=""
     />
     <h1>- Ponemos de nuestra parte -</h1>
-    <h3>Nuestros productos, pensados para tí</h3>
+    <h3>Nuestros servicios, pensados para tí</h3>
     <hr />
-    <card-expand/>
+    <cardos-expand/>
+    <hr />
+    <h1>- Opiniones de nuestros clientes -</h1>
+    <hr />
+    <testimonios-view/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import CardExpand from "./CardExpand.vue";
+import CardosExpand from "./CardosExpand.vue";
+import TestimoniosView from "./TestimoniosView.vue";
 
 export default {
   name: "PageContent",
@@ -75,6 +49,8 @@ export default {
   },
   components: {
     CardExpand,
+    CardosExpand,
+    TestimoniosView,
   },
 };
 </script>
