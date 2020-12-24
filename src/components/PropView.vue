@@ -4,7 +4,7 @@
     class="overflow-hidden"
     style="position: relative"
   >
-    <v-container class="mt-14" >
+    <v-container class="mt-14gi" >
       <v-row align="center" justify="center">
         <v-btn color="pink" dark @click.stop="drawer = !drawer">
           Ingresa en nuestra plataforma
