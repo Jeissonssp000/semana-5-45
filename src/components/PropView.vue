@@ -4,6 +4,7 @@
     class="overflow-hidden"
     style="position: relative"
   >
+    <carusel-view/>
     <v-container class="fill-height pt-0">
       <v-row align="center" justify="center">
         <v-btn color="pink" dark @click.stop="drawer = !drawer">
@@ -13,6 +14,7 @@
       <page-content />
     </v-container>
 
+
     <v-navigation-drawer v-model="drawer" absolute temporary>
       <login-form />
     </v-navigation-drawer>
@@ -20,10 +22,11 @@
 </template>
 
 <script>
+import CaruselView from './CaruselView.vue';
 import LoginForm from "./LoginForm.vue";
 import PageContent from "./PageContent.vue";
 export default {
-  components: { LoginForm, PageContent },
+  components: { LoginForm, PageContent, CaruselView},
   name: "PropView",
   data() {
     return {

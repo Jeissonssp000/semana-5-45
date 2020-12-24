@@ -66,7 +66,7 @@ export default {
       // este let permite enviar información a nuestra api $http es el valor por defecto que escribimos en main.js
       try {
         // let response = await this.$http.post("/api/usuario/login", this.login);
-        let response = await this.$http.post("/api/auth/signin", this.login);
+        let response = await this.$http.post("/api/usuario/login", this.login);
         console.log(response);
         let token = response.data.accessToken;
 

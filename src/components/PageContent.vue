@@ -1,11 +1,12 @@
 <template>
   <div class="container">
-    
     <div>
       <v-parallax
+        class="h-auto"
         dark
-        src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+        src="https://previews.123rf.com/images/ponomarenko13/ponomarenko131603/ponomarenko13160300014/53645868-resumen-l%C3%ADneas-azules-sobre-un-fondo-claro-.jpg"
       >
+        
         <v-row align="center" justify="center">
           <v-col class="text-center" cols="12">
             <v-container>
@@ -59,28 +60,25 @@
     <h3>Nuestros productos, pensados para tí</h3>
     <div class="container pb-5 pt-4">
       <div class="row">
-        <card-expand v-for="p in prices" :key="p"/>
+        <card-expand v-for="p in prices" :key="p" />
       </div>
     </div>
-    <carusel-view/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import CardExpand from "./CardExpand.vue";
-import CaruselView from './CaruselView.vue';
 
 export default {
   name: "PageContent",
-  data(){
-    return{
-      prices: [8400, 1500, 2550, 3200, 6200, 1700, 2800]
-    }
+  data() {
+    return {
+      prices: [8400, 1500, 2550, 3200, 6200, 1700, 2800],
+    };
   },
   components: {
     CardExpand,
-    CaruselView,
   },
 };
 </script>

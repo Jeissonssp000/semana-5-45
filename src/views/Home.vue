@@ -22,14 +22,13 @@
     </v-app-bar>
 
     <!-- <page-content msg="Para ti, todo de nosotros" style="background: beige" /> -->
-    <banner-view/>
+    <!-- <banner-view/> -->
     <prop-view/>
     <footer-view></footer-view>
   </v-app>
 </template>
 
 <script>
-import BannerView from '../components/BannerView.vue';
 // @ is an alias to /src
 import FooterView from "../components/FooterView.vue";
 import PropView from '../components/PropView.vue';
@@ -39,7 +38,6 @@ export default {
   components: {
     FooterView,
     PropView,
-    BannerView,
   },
 };
 </script>
