@@ -5,7 +5,7 @@
     style="position: relative"
   >
     <carusel-view/>
-    <v-container class="fill-height pt-0">
+    <v-container>
       <v-row align="center" justify="center">
         <v-btn color="pink" dark @click.stop="drawer = !drawer">
           Ingresa en nuestra plataforma
