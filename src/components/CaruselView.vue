@@ -9,16 +9,16 @@
     img-height="480"
   >
     <b-carousel-slide
-      caption="First slide"
-      img-src="https://picsum.photos/1024/480/?image=52"
+      caption=""
+      img-src="https://image.freepik.com/vector-gratis/ilustracion-concepto-email-marketing_114360-2081.jpg"
     ></b-carousel-slide>
     <b-carousel-slide
-      caption="Second Slide"
-      img-src="https://picsum.photos/1024/480/?image=12"
+      caption=""
+      img-src="https://image.freepik.com/vector-gratis/sistema-crm-retroalimenta-composicion-isometrica-dispositivo-movil-cuenta-usuario-purpura_1284-28827.jpg"
     ></b-carousel-slide>
     <b-carousel-slide
-      caption="Third Slide"
-      img-src="https://picsum.photos/1024/480/?image=22"
+      caption=""
+      img-src="https://image.freepik.com/vector-gratis/equipo-especialistas-lupa-portatil-flecha-marketing-digital-campana-ppc-concepto-relaciones-clientes-sobre-fondo-blanco_335657-1699.jpg"
     ></b-carousel-slide>
   </b-carousel>
 </div>
